@@ -7,16 +7,22 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: crosshair;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
 }
 
@@ -26,4 +32,15 @@ header{
 
 .container-menu{
     display: flex;
+    gap: 25px;
 }
+
+.darkMode> img{
+    height: 45px;
+    
+}
+
+.icon-menu>img{
+    height: 45px;
+}
+
