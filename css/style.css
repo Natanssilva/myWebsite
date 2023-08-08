@@ -7,12 +7,35 @@
 
 html{
     scroll-behavior: smooth;
-    cursor: crosshair;
 }
 
 body{
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
+    cursor: none;
 }
+
+body:hover #cursor{ /* usando a pseudo classe HOVER para que quando passar o mouse na tela, o cursor apareça */
+    opacity: 1;
+}
+
+#cursor{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid rgba(165, 18, 165, 0.507);
+    opacity: 0;
+    top: 0;
+    position: fixed; /* pra garantir q o elemento sempre vai estar posicionado pelos movimentos do mouse sem poder interagir com o elemento */
+    pointer-events: none; /* tira qualquer eventual mudança do cursor se tiver um evento */
+   
+
+}
+
+
+
+  
 
 h1{
     font-family: 'Roboto', sans-serif;
@@ -44,3 +67,21 @@ header{
     height: 45px;
 }
 
+
+@keyframes stretch {
+    0% {
+       
+        opacity: 0.2;
+        background-color: green;
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        transform: scale(2.0);
+        background-color: red;
+    }
+}
