@@ -14,3 +14,27 @@ window.addEventListener('mousemove', function (position)  { // aqui eu adiciono 
 
 //Menu 
 
+function abrirMenu(){
+    const openMenu = document.getElementById('img-openMenu');
+    const CloseMenu = document.getElementById('img-closeMenu');
+    const NavMenu = document.querySelector('.menu-open');
+    
+    openMenu.style.display = 'none';
+    CloseMenu.style.display = 'block';
+    NavMenu.style.display = 'block';
+}
+
+function fecharMenu(){
+    const CloseMenu = document.getElementById('img-closeMenu');
+    const openMenu = document.getElementById('img-openMenu');
+    const NavMenu = document.querySelector('.menu-open');
+
+    CloseMenu.style.display = 'none';
+    openMenu.style.display = 'block';
+    NavMenu.style.display = 'none';
+}
+
+document.getElementById('img-closeMenu').addEventListener('click', fecharMenu);
+
+
+

@@ -40,9 +40,7 @@ h1{
 
 }
 
-#home h1{
-    position: absolute;
-}
+
 
 header{
     display: flex;
@@ -55,7 +53,7 @@ header{
 
 .menu-open{
     display: none;
-    z-index: 9;
+    position: fixed;
     background-color: #ffff;
     border-radius: 15px;
     border:1px transparent;
@@ -90,7 +88,6 @@ header{
 
 .darkMode> img{
     height: 25px;
-    
 }
 
 
@@ -98,14 +95,10 @@ header{
     height: 25px;
 }
 
-#img-openMenu{
-    
-}
 
 #img-closeMenu{
     display: none;
 }
-
 
 
 @keyframes stretch {
