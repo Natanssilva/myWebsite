@@ -23,7 +23,7 @@ body:hover #cursor{ /* usando a pseudo classe HOVER para que quando passar o mou
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.404);
     border: 2px solid rgba(165, 18, 165, 0.507);
     opacity: 0;
     top: 0;
@@ -34,23 +34,53 @@ body:hover #cursor{ /* usando a pseudo classe HOVER para que quando passar o mou
 }
 
 
-
-  
-
 h1{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+
+}
+
+#home h1{
+    position: absolute;
 }
 
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
+
+
 
 .menu-open{
     display: none;
+    z-index: 9;
+    background-color: #ffff;
+    border-radius: 15px;
+    border:1px transparent;
+    box-shadow: -1px 0px 11px -2px rgba(218,37,240,0.32);
+    -webkit-box-shadow: -1px 0px 11px -2px rgba(218,37,240,0.32);
+    -moz-box-shadow: -1px 0px 11px -2px rgba(218,37,240,0.32);
+    padding: 20px;
+    margin-top: 15px;
+    
+}
+
+.menu-open a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open a:hover{
+    transform: scale(1.1);
+    color: rgb(216, 37, 240);
+}
+
+.menu-open li{
+    padding: 5px;
+    list-style: none;
 }
 
 .container-menu{
@@ -59,13 +89,23 @@ header{
 }
 
 .darkMode> img{
-    height: 45px;
+    height: 25px;
     
 }
 
+
 .icon-menu>img{
-    height: 45px;
+    height: 25px;
 }
+
+#img-openMenu{
+    
+}
+
+#img-closeMenu{
+    display: none;
+}
+
 
 
 @keyframes stretch {
