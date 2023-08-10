@@ -101,20 +101,41 @@ header{
 }
 
 
-@keyframes stretch {
-    0% {
-       
-        opacity: 0.2;
-        background-color: green;
-        border-radius: 100%;
-    }
+/* efeito digitado */
 
-    50% {
-        background-color: orange;
+#text-content {
+    display: flex;
+    justify-content: center;
+    height: 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+  }
+  
+  #text-content::after {
+    content: "|";
+    width: 3px;
+    height: 50px;
+    display: inline-block;
+    background-color: #fff;
+    animation: flasher 0.6s infinite linear;
+    opacity: 0;
+    margin-left: 10px;
+  }
+  
+  @keyframes flasher {
+    from {
+      opacity: 1;
     }
+  }
 
-    100% {
-        transform: scale(2.0);
-        background-color: red;
-    }
-}
+ .text-main{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 15px;
+ }
+
+ h2{
+    font-size: 2.5rem;
+ }
