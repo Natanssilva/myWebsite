@@ -14,7 +14,7 @@ window.addEventListener('mousemove', function (position)  { // aqui eu adiciono 
 
 //Menu 
 
-function abrirMenu(){
+function MenuWeb(){
     const openMenu = document.getElementById('img-openMenu');
     const CloseMenu = document.getElementById('img-closeMenu');
     const NavMenu = document.querySelector('.menu-open');
@@ -24,7 +24,7 @@ function abrirMenu(){
     NavMenu.style.display = 'block';
 }
 
-function fecharMenu(){
+function MenuWebClose(){
     const CloseMenu = document.getElementById('img-closeMenu');
     const openMenu = document.getElementById('img-openMenu');
     const NavMenu = document.querySelector('.menu-open');
@@ -33,8 +33,8 @@ function fecharMenu(){
     openMenu.style.display = 'block';
     NavMenu.style.display = 'none';
 }
-
-document.getElementById('img-closeMenu').addEventListener('click', fecharMenu);
+document.getElementById('img-openMenu').addEventListener('click', MenuWeb);
+document.getElementById('img-closeMenu').addEventListener('click', MenuWebClose);
 
 
 
