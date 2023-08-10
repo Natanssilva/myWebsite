@@ -42,7 +42,7 @@ document.getElementById('img-closeMenu').addEventListener('click', MenuWebClose)
 
 const arrayText = [
     "Sou desenvolvedor Front-End Web",
-    "e faço faculdade de Sistemas para Internet"
+    "sou estudante de Sistemas para Internet"
   ];
   
   const writeTime = 100; // tempo  escrever e apagar.
@@ -78,6 +78,23 @@ const arrayText = [
   }
   
   writeText();
+
+  //DARK MODE DO SITE
+
+  const moon = document.querySelector('#img-moon');
+  const sun = document.querySelector('#img-sun')
+
+function darkmode(){
+    moon.style.display = 'none';
+    sun.style.display = 'block';
+
+  
+}
+
+  moon.addEventListener('click',darkmode);
+  
+ 
+
 
 
 

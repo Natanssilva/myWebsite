@@ -19,6 +19,10 @@ body:hover #cursor{ /* usando a pseudo classe HOVER para que quando passar o mou
     opacity: 1;
 }
 
+body .dark{
+    background-color: #292929;
+}
+
 #cursor{
     height: 14px;
     width: 14px;
@@ -139,3 +143,10 @@ header{
  h2{
     font-size: 2.5rem;
  }
+
+ /* darkmode */
+
+ #img-sun{
+    display: none;
+ }
+
